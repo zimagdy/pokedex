@@ -1,0 +1,9 @@
+Welcome to the Pokedex!
+  Usage: 
+ 
+  help: Displays a help message
+  exit: Exit the Pokedex
+  explore: Explore location area
+Pokedex > Throwing a Pokeball at squirtle...
+squirtle escaped!
+Pokedex > Closing the Pokedex... Goodbye!
