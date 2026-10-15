@@ -4,7 +4,16 @@
 
 # Getting Started
 
-### Follow these steps to run the project locally.
+### Prerequisites
+
+Make sure you have Node.js and npm installed by running:
+
+```
+npm --version
+node --version
+```
+
+### Follow these steps
 
 1. Clone the repository
 
@@ -29,3 +38,5 @@ npm install
 ```
 npm run dev
 ```
+
+After running the command, you'll see a welcome message and a list of available commands you can use to interact with the Pokédex.
