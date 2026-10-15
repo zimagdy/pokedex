@@ -1,7 +1,7 @@
 import { createInterface, type Interface } from "node:readline";
-import { CLICommand, Pokemon } from "./command.js";
+import { CLICommand, Pokemon } from "./commands/command.js";
 import { stdin, stdout } from "node:process";
-import { getCommands } from "./command.js";
+import { getCommands } from "./commands/command.js";
 import { PokeAPI } from "./pokeapi.js";
 
 export type State = {
@@ -11,6 +11,7 @@ export type State = {
   nextLocationsURL: string | null;
   prevLocationsURL: string | null;
   locationName: string;
+  pokemonName: string;
   pokedex: Record<string, Pokemon>;
 };
 
@@ -32,6 +33,7 @@ export function initState(): State {
     nextLocationsURL: null,
     prevLocationsURL: null,
     locationName: "",
+    pokemonName: "",
     pokedex: {
       "": {
         base_experience: 0,
